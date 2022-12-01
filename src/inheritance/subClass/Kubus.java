@@ -9,7 +9,7 @@ public class Kubus extends Persegi {
   }
 
   // OVERRIDE METHODS: METHODS DARI PARENT YG DIBUAT DI CLASS CHILDNYA
-  public void getTitle() {
-    System.out.println("=== KUBUS ===");
-  }
+  // public void getTitle() {
+  // System.out.println("=== KUBUS ===");
+  // }
 }

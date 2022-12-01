@@ -1,6 +1,8 @@
 package inheritance.superClass;
 
-public class Segitiga {
+import inheritance.service.BangunDatarService;
+
+public class Segitiga implements BangunDatarService {
   // Atribut
   private int sisi;
   private int tinggi;
@@ -31,8 +33,8 @@ public class Segitiga {
     return this.sisi * this.tinggi / 2;
   }
 
-  public void getTitle() {
-    System.out.println("=== SEGITIGA ===");
+  public void getTitle(String namaBangun) {
+    System.out.println("=== " + namaBangun + " ===");
   }
 
 }

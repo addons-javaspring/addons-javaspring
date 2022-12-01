@@ -2,6 +2,7 @@ package inheritance;
 
 import java.util.Scanner;
 
+// import inheritance.service.BangunDatarService;
 import inheritance.subClass.Kubus;
 import inheritance.subClass.PrismaSegitiga;
 import inheritance.superClass.Persegi;
@@ -43,6 +44,7 @@ public class MainApp {
     // Instance object main
     MainApp main = new MainApp();
     Persegi persegi = new Persegi();
+    // BangunDatarService bangunDatarService = new Persegi();
     Segitiga segitiga = new Segitiga();
     Kubus kubus = new Kubus();
 
@@ -55,7 +57,7 @@ public class MainApp {
 
           switch (pilihSubMenu) {
             case "1":
-              persegi.getTitle();
+              persegi.getTitle("PERSEGI");
               System.out.print("Input sisi persegi: ");
               int sisi = Integer.valueOf(in.nextLine());
               persegi.setSisi(sisi);
@@ -65,7 +67,7 @@ public class MainApp {
               break;
 
             case "2":
-              segitiga.getTitle();
+              segitiga.getTitle("SEGITIGA SAMA SISI");
 
               // Input data
               System.out.print("Input sisi segitiga: ");
@@ -92,7 +94,7 @@ public class MainApp {
 
           switch (pilihSubMenu) {
             case "1":
-              kubus.getTitle();
+              kubus.getTitle("KUBUS");
               System.out.print("Input sisi kubus: ");
               int sisi = Integer.valueOf(in.nextLine());
               kubus.setSisi(sisi);
@@ -104,7 +106,7 @@ public class MainApp {
 
             case "2":
               PrismaSegitiga ps = new PrismaSegitiga();
-              ps.getTitle();
+              ps.getTitle("PRISMA SEGITIGA");
 
               // Input data
               System.out.print("Input sisi segitiga: ");

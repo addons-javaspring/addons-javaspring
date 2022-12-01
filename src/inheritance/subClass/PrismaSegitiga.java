@@ -21,12 +21,6 @@ public class PrismaSegitiga extends Segitiga {
     return super.getLuas() * this.tinggiPrisma;
   }
 
-  @Override
-  public void getTitle() {
-    // TODO Auto-generated method stub
-    System.out.println("=== PRISMA SEGITIGA ===");
-  }
-
   public int getTinggiPrisma() {
     return tinggiPrisma;
   }
